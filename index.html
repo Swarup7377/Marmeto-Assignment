@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .head-container button {
+            margin-top: 300px;
+            width: 300px;
+            height: 52px;
+            border-radius: 5px;
+            Padding: 10px 26px 10px 26px;
+            background-color: black;
+            color: rgb(231, 228, 228);
+            font-size: 15px;
+        }
+
+        .cart-container {
+            position: relative;
+            float: right;
+            width: 365px;
+            display: none;
+        }
+
+        .cart-head {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .cart1 {
+            display: flex;
+            margin-top: 10px;
+        }
+        .cart-details{
+            display: flex;
+            justify-content: space-between;
+            margin-top: -20px;
+            
+        }
+        .cart1-details{
+            margin-left: 10px;
+            margin-right: 50px;
+        }
+        .checkout-details{
+            display: flex;
+            justify-content: space-between;
+        }
+        .Checkout-btn button{
+            width: 100%;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .checkout-container a{
+            display: flex;
+            align-self: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main-container" >
+        <div class="head-container" id="head-container">
+            <button onclick="getCart()">Open cart</button>
+        </div>
+        <div class="cart-container" id="cart-container">
+            <div>
+                <div class="cart-head">
+                    <h2>Cart</h2>
+                    <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-x-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                        </svg></div>
+                </div>
+                <div class="cart1">
+                    <div><img src="./IMAGES/image1.png"></div>
+                    <div class="cart-details">
+                        <div class="cart1-details">
+                            <h3>Tray</h3>
+                            <p>Color : Black</p>
+                            <button>- 2 +</button>
+                        </div>
+                        <div>
+                            <p>$19.19</p>
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-x-lg" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart1">
+                    <div><img src="./IMAGES/image2.png"></div>
+                    <div class="cart-details">
+                        <div class="cart1-details">
+                            <h3>Tray</h3>
+                            <p>Color : Black</p>
+                            <button>- 2 +</button>
+                        </div>
+                        <div style="right: 10px">
+                            <p>$19.19</p>
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-x-lg" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart1">
+                    <div><img src="./IMAGES/image3.png"></div>
+                    <div class="cart-details">
+                        <div class="cart1-details">
+                            <h3>Tray</h3>
+                            <p>Color : Black</p>
+                            <button>- 2 +</button>
+                        </div>
+                        <div>
+                            <p>$19.19</p>
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-x-lg" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-container">
+                    <div class="checkout-details">
+                        <h6>Subtotal</h6>
+                        <p>$99.00</p>
+                    </div>
+                    <div class="checkout-details">
+                        <h3>Total</h3>
+                        <p>$234.00</p>
+                    </div>
+                    <div class="Checkout-btn">
+                        <button>Checkout</button>
+                    </div>
+                    <div style="margin-left: 35%;">
+                        <a href="=#">View Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let mainContainer=document.getElementById(head-container);
+    let cartContainer=document.getElementById(cart-container);
+    function getCart(){
+        mainContainer.style.display='none';
+        cartContainer.style.display='block';
+    }
+</script>
+
+</html>
